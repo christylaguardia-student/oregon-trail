@@ -1,0 +1,130 @@
+body {
+  background: black;
+  font-family: "VT323", monospace;
+}
+
+main {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  min-height: 480px;
+  margin: 5rem auto;
+  border-top: 1rem solid green;
+  border-bottom: .5rem solid green;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  /*overflow: hidden;*/
+}
+
+h1, h3 {
+  text-align: center;
+  color: green;
+  margin: 0 auto;
+}
+
+h1 { font-size: 5rem; }
+
+h3 { font-size: 2rem; }
+
+p {
+  color: #ffffff;
+  font-size: 1.5em;
+  margin: 0 auto;
+}
+
+section {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#stats-area {
+  width: 30%;
+  float: left;
+}
+
+#updates-area {
+  width: 65%;
+  height: 310px;
+  padding-top: 12px;
+  float: right;
+  overflow: hidden;
+  /*overflow-y: scroll;*/
+}
+
+.update-positive {
+  color: #669966;
+}
+
+.update-negative {
+  color: red;
+}
+
+.update-neutral {
+  color: #90908F;
+}
+
+.product, button {
+  font-family: "VT323", monospace;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border: 3px solid #000;
+  background-color: #90908F;
+}
+
+.product p {
+  border: 3px solid #000;
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
+}
+
+.hidden {
+  display: none;
+}
+
+#shop, #attack {
+  position: absolute;
+  text-align: center;
+  width: 320px;
+  height: 240px;
+  background-color: #90908F;
+  font-size: 1.5rem;
+}
+
+#shop {
+  border: 10px solid yellow;
+}
+
+#attack {
+  color: red;
+  border: 10px solid red;
+}
+
+#progress-area {
+  position: relative;
+  height: 64px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  /*probably a smarter way to do this*/
+  margin-top: 340px;
+}
+
+#caravan {
+  position: absolute;
+}
+
+/* TODO:  */
+/*#userInput {
+  margin-top: 372px;
+  height: 30px;
+  width: 638px;
+  font-family: "VT323", monospace;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: cell;
+}*/
+
+/*#userInput:focus {
+  outline: none;
+}*/
