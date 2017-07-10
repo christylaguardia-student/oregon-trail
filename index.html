@@ -14,42 +14,78 @@
       </section>
 
       <section id="stats-area">
-        <h3>Status</h3>
-        <p id="stat-day"></p>
-        <p id="stat-distance"></p>
-        <br>
-        <h3>Caravan</h3>
-        <p id="stat-crew"></p>
-        <p id="stat-oxen"></p>
-        <p id="stat-food"></p>
-        <p id="stat-money"></p>
-        <p id="stat-firepower"></p>
-        <p id="stat-weight"></p>
+        <table>
+          <tr colspan="2">
+            <th>Status</th>
+          </tr>
+          <tr>
+            <td>Day</td>
+            <td id="stat-day"></td>
+          </tr>
+          <tr>
+            <td>Distance</td>
+            <td id="stat-distance"></td>
+          </tr>
+          <tr colspan="2">
+            <th>Caravan</th>
+          </tr>
+          <tr>
+            <td>Crew</td>
+            <td id="stat-crew"></td>
+          </tr>
+          <tr>
+            <td>Oxen</td>
+            <td id="stat-oxen"></td>
+          </tr>
+          <tr>
+            <td>Food</td>
+            <td id="stat-food"></td>
+          </tr>
+          <tr>
+            <td>Money</td>
+            <td id="stat-money"></td>
+          </tr>
+          <tr>
+            <td>Fire Power</td>
+            <td id="stat-firepower"></td>
+          </tr>
+          <tr>
+            <td>Weight</td>
+            <td id="stat-weight"></td>
+          </tr>
+        </table>
       </section>
 
-      <section id="updates-area">
+      <section>
         <h3>Trail Log</h3>
-        <!-- updates go here -->
+        <div id="updates-area">
+          <!-- updates go here -->
+        </div>
       </section>
 
       <section id="shop" class="hidden">
         <h3>Do you want to buy?</h3>
         <div id="prods"></div>
-        <button>Leave shop</button>
+        <button><u>L</u>eave shop</button>
       </section>
 
       <section id="attack" class="hidden">
         <h3>You are under attack!</h3>
         <div id="attack-description"></div>
-        <button id="fight">Fight</button>
-        <button id="runaway">Run away</button>
+        <button id="fight"><u>F</u>ight</button>
+        <button id="runaway"><u>R</u>un away</button>
       </section>
 
       <section id="progress-area">
+        <img id="tree" src="images/pine-tree.png">
         <img id="caravan" src="images/old-wagon.png">
+        <img id="cabin" src="images/wood-cabin.png">
       </section>
 
       <!-- TODO: replace buttons with input box -->
+      <section id="input-area">
+        <p id="computer-msg">PRESS THE SPACE BAR TO CONTINUE<p>
+      </section>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="scripts/event.js"></script>

@@ -5,21 +5,22 @@ Oregon.UI = {};
 // show a notification in the message area
 Oregon.UI.notify = function(message, type) {
   console.log(message, type);
-  $('#updates-area').prepend('<p class="update-' + type + '">Day '+ Math.ceil(this.caravan.day) + ': ' + message + '</p>');
+  // $('#updates-area').prepend('<p class="update-' + type + '">Day '+ Math.ceil(this.caravan.day) + ': ' + message + '</p>');
+  $('#updates-area').append('<p class="update-' + type + '">Day '+ Math.ceil(this.caravan.day) + ': ' + message + '</p>');
 };
 
 // refresh the visual caravan stats
 Oregon.UI.refreshStats = function() {
   // console.log('caravan', this.caravan);
   // modify the document
-  $('#stat-day').text('Day ' + Math.ceil(this.caravan.day));
-  $('#stat-distance').text('Distance ' + Math.floor(this.caravan.distance) + ' miles');
-  $('#stat-crew').text('Crew ' + this.caravan.crew);
-  $('#stat-oxen').text('Oxen ' + this.caravan.oxen);
-  $('#stat-food').text('Food ' + Math.ceil(this.caravan.food) + ' lbs.');
-  $('#stat-money').text('Money $' + this.caravan.money);
-  $('#stat-firepower').text('Firepower ' + this.caravan.firepower);
-  $('#stat-weight').text('Weight ' + Math.ceil(this.caravan.weight) + '/' + this.caravan.capacity);
+  $('#stat-day').text(Math.ceil(this.caravan.day));
+  $('#stat-distance').text(Math.floor(this.caravan.distance) + ' miles');
+  $('#stat-crew').text(this.caravan.crew);
+  $('#stat-oxen').text(this.caravan.oxen);
+  $('#stat-food').text(Math.ceil(this.caravan.food) + ' lbs.');
+  $('#stat-money').text('$' + this.caravan.money);
+  $('#stat-firepower').text(this.caravan.firepower);
+  $('#stat-weight').text(Math.ceil(this.caravan.weight) + '/' + this.caravan.capacity);
 
   // TODO: change from pixles
   $('#caravan').css({ left: (638 * this.caravan.distance/Oregon.finalDistance) + 'px'})

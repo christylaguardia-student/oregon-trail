@@ -61,8 +61,15 @@ Oregon.Game.startJourney = function() {
   this.step();
 };
 
+$(document).keypress(function(event) {
+  if (event.keyCode == 32) { // space bar
+    alert('the user pressed the space bar');
+  }
+});
+
 // game loop
 Oregon.Game.step = function(timestamp) {
+  
   // set the previousTime for the first time
   if(!this.previousTime) {
     this.previousTime = timestamp;
